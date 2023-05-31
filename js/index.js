@@ -1,7 +1,7 @@
 function makeAnimationWork(element) {
     const elementStyles = getComputedStyle(element),
         elementDisplay = getComputedStyle(element).display,
-        elementCoords = element.getBoundingClientRect().top * 1.5,
+        elementCoords = element.getBoundingClientRect().top,
         elementAnimationClass = element.dataset.animation
         blankDiv = document.createElement('div')
 
