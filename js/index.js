@@ -1,4 +1,5 @@
-import Animated from "./modules/Animated.js"
+// import Animated from "./modules/Animated.js"
+import AnimatedElements from './modules/Animated.js'
 import Timer from "./modules/Timer.js"
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,9 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
         secondsSelector: '#seconds'
     }).setClock()
 
-    document.querySelectorAll('.animate__animated').forEach(item => {
-        new Animated(item).init()
-    })
+    new AnimatedElements('.animate__animated').init()
+
+    // document.querySelectorAll('.animate__animated').forEach(item => {
+    //     new Animated(item).init()
+    // })
 
     window.scrollBy(0, 1)
 })
